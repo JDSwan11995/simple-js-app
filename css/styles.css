@@ -1,1 +1,13 @@
-
+* {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    margin: 5px;
+}
+:root {
+    --background-prime:#235f7f;
+    --text-color:bisque;
+}
+body {
+    background:var(--background-prime);
+    color:var(--text-color);
+}
