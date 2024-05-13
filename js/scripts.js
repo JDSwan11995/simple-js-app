@@ -19,7 +19,10 @@ let pokemonList = [
         height: 1.8,
         number: 122,
         disposition: 'Nightmare Fuel'
-    },
+    }
+];
+
+let pokemonList2 = [
     {
         name: 'Mimikyu',
         type: ['Ghost', 'Fairy'],
@@ -43,10 +46,18 @@ let pokemonList = [
     },
 ];
 
-for (let i = 1; i < pokemonList.length; i++) {
-    if (pokemonList[i].height === 1.9) {
-        document.write(pokemonList[i].name + " (height: " + pokemonList[i].height + "m) -That's Tall! " + "<br>");
-    } else {
-        document.write(pokemonList[i].name + " (height: " + pokemonList[i].height + "m) " + "<br>")
+function printArrayDetails(list){
+    for (let i = 0; i < list.length; i++) {
+        if (list[i].height === 1.9) {
+            document.write("<p>" + list[i].name + " (height: " + list[i].height + "m) - That's Tall! " + "</p>") 
+            console.log(list[i].name + " height: " + list[i].height + "m");
+        } else {
+            document.write("<p>" + list[i].name + " (height: " + list[i].height + "m) " + "</p>")
+            console.log(list[i].name + " height: " + list[i].height + "m")
+        }
     }
-}
+};
+
+printArrayDetails(pokemonList2);
+
+printArrayDetails(pokemonList);
