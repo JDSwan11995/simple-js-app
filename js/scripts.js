@@ -61,3 +61,21 @@ function printArrayDetails(list){
 printArrayDetails(pokemonList2);
 
 printArrayDetails(pokemonList);
+
+
+function divide(dividend, divisor){
+    if(divisor === 0){
+        return "You are trying to divide by zero, stop that, the universe is fragile enough."
+    }else{
+        let result = dividend / divisor;
+        return result;
+    }
+};
+
+let yourName = prompt('Can I have your name?');
+console.log(yourName);
+
+let isAccepted = confirm('Can I have your soul?');
+console.log(isAccepted);
+
+let howRude = alert('Whatcha got against fairies?')
