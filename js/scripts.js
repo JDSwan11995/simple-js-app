@@ -59,21 +59,19 @@ function printArrayDetails(list){
 printArrayDetails(pokemonList);
 
 
-function divide(dividend, divisor){
-    if(divisor === 0){
-        return "You are trying to divide by zero, stop that, the universe is fragile enough."
-    }else{
-        let result = dividend / divisor;
-        return result;
-    }
-};
+// function divide(dividend, divisor){
+//     if(divisor === 0){
+//         return "You are trying to divide by zero, stop that, the universe is fragile enough."
+//     }else{
+//         let result = dividend / divisor;
+//         return result;
+//     }
+// };
 
-let yourName = prompt('Can I have your name?');
-console.log(yourName);
+// let yourName = prompt('Can I have your name?');
+// console.log(yourName);
 
-let isAccepted = confirm('Can I have your soul?');
-console.log(isAccepted);
+// let isAccepted = confirm('Can I have your soul?');
+// console.log(isAccepted);
 
-let howRude = alert('Whatcha got against fairies?')
-
-pokemonList.forEach ( (item) => {console.log(item.disposition)})
+// let howRude = alert('Whatcha got against fairies?')
