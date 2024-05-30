@@ -19,10 +19,7 @@ let pokemonList = [
         height: 1.8,
         number: 122,
         disposition: 'Nightmare Fuel'
-    }
-];
-
-let pokemonList2 = [
+    },
     {
         name: 'Mimikyu',
         type: ['Ghost', 'Fairy'],
@@ -48,7 +45,7 @@ let pokemonList2 = [
 
 function printArrayDetails(list){
     for (let i = 0; i < list.length; i++) {
-        if (list[i].height === 1.9) {
+        if (list[i].height >= 1.8) {
             document.write("<p>" + list[i].name + " (height: " + list[i].height + "m) - That's Tall! " + "</p>") 
             console.log(list[i].name + " height: " + list[i].height + "m");
         } else {
@@ -58,7 +55,6 @@ function printArrayDetails(list){
     }
 };
 
-printArrayDetails(pokemonList2);
 
 printArrayDetails(pokemonList);
 
@@ -79,3 +75,5 @@ let isAccepted = confirm('Can I have your soul?');
 console.log(isAccepted);
 
 let howRude = alert('Whatcha got against fairies?')
+
+pokemonList.forEach ( (item) => {console.log(item.disposition)})
