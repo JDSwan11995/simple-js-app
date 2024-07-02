@@ -60,18 +60,24 @@ let pokemonRepository = (function () {
         button.classList.add("button-class");
         listpokemon.appendChild(button);
         pokemonList.appendChild(listpokemon);
+        button.addEventListener('click', function(event){
+            pokemonRepository.showDetails(pokemon)
+        });
+    }
+
+    function showDetails(pokemon){
+        console.log(pokemon.name);
     }
 
     return {
         add: add,
         getAll: getAll,
         addListItem: addListItem,
+        showDetails: showDetails,
     };
 })();
 
 pokemonRepository.add({name: 'Pikachu', type: 'Electric', height: 0.4, number: 25, disposition: 'Somewhat Basic'})
-
-console.log(pokemonRepository.getAll());
 
 pokemonRepository.getAll().forEach(function(pokemon){
     pokemonRepository.addListItem(pokemon);

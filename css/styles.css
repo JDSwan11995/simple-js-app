@@ -6,6 +6,8 @@
 :root {
     --background-prime:#235f7f;
     --text-color:bisque;
+    --link-color:#bdd5d0;
+    --dark-gray:#2b2b2b;
 }
 body {
     background:var(--background-prime);
@@ -23,4 +25,6 @@ body {
 	border-bottom: 2px solid rgba(0, 0, 0, 0.3);
 	-webkit-transition: opacity, background-color, color 0.9s;
 	transition: opacity, background-color, color 0.9s;
+    max-width: 200px;
+	min-width:100px;
 }
