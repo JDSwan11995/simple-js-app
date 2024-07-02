@@ -52,16 +52,27 @@ let pokemonRepository = (function () {
         return pokemonList;
     }
 
+    function addListItem(pokemon){
+        let pokemonList = document.querySelector(".pokemon-list");
+        let listpokemon = document.createElement("li");
+        let button = document.createElement("button");
+        button.innerText = pokemon.name;
+        button.classList.add("button-class");
+        listpokemon.appendChild(button);
+        pokemonList.appendChild(listpokemon);
+    }
+
     return {
         add: add,
-        getAll: getAll
+        getAll: getAll,
+        addListItem: addListItem,
     };
 })();
 
+pokemonRepository.add({name: 'Pikachu', type: 'Electric', height: 0.4, number: 25, disposition: 'Somewhat Basic'})
+
+console.log(pokemonRepository.getAll());
+
 pokemonRepository.getAll().forEach(function(pokemon){
-    if (pokemon.height >= 1.8){
-        document.write("<p>" + pokemon.name + " (height: " + pokemon.height +"m) - Wow, that's tall! </p>")
-    } else if (pokemon.height){
-        document.write("<p>" + pokemon.name + " (height: " + pokemon.height +"m) </p>")
-    }
+    pokemonRepository.addListItem(pokemon);
 });

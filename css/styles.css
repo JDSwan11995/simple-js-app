@@ -11,3 +11,16 @@ body {
     background:var(--background-prime);
     color:var(--text-color);
 }
+.button-class{
+    border:none;
+	display:inline-block;
+	font-family: inherit;
+	background-color: var(--link-color);
+	color: var(--dark-gray);
+	text-decoration: none;
+	padding: 10px;
+	border-radius: 3px;
+	border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+	-webkit-transition: opacity, background-color, color 0.9s;
+	transition: opacity, background-color, color 0.9s;
+}
