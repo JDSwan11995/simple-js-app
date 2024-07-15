@@ -43,6 +43,7 @@ let pokemonRepository = (function () {
             disposition: 'Excessive'
         },
     ];
+    let apiUrl = 'https://pokeapi.co/api/v2/pokemon/?limit=150';
 
     function add(pokemon) {
         pokemonList.push(pokemon);
