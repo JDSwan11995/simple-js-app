@@ -75,3 +75,7 @@ body {
 .modal img {
   size: 300px;
 }
+
+.modal img:hover{
+  transform:scale(1.5);
+}
