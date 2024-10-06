@@ -13,8 +13,7 @@
 </head>
 
 <body>
-
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <header class="navbar navbar-expand-lg navbar-dark bg-primary">
         <a class="navbar-brand" href="#">PokeDex</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle Navigation">
@@ -27,11 +26,15 @@
                 </li>
             </ul>
         </div>
-    </nav>
+    </header>
 
-    <div class="container mt-5">
-        <ul class="list-group pokemon-list"></ul>
-    </div>
+    <main class="container mt-5">
+        <div class="row list-group pokemon-list">
+            <div class="col-md-4"></div>
+            <div class="col-md-4"></div>
+            <div class="col-md-4"></div>
+        </div>
+    </main>
 
     <div class="modal fade" id="pokemonModal" tabindex="-1" role="dialog" aria-labelledby="pokemonModalLabel"
         aria-hidden="true">
